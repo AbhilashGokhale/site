@@ -1,4 +1,7 @@
-(function (global) {
+<h2 id="menu-categories-title" class="text-center">Menu Categories</h2>
+<div class="text-center">
+  Substituting white rice with brown rice or fried rice after 3:00pm will be $1.50 for a pint and $2.50 for a quart.
+</div>(function (global) {
 
 // Set up a namespace for our utility
 var ajaxUtils = {};
@@ -6,10 +9,10 @@ var ajaxUtils = {};
 
 // Returns an HTTP request object
 function getRequestObject() {
-  if (global.XMLHttpRequest) {
+  if (window.XMLHttpRequest) {
     return (new XMLHttpRequest());
   } 
-  else if (global.ActiveXObject) {
+  else if (window.ActiveXObject) {
     // For very old IE browsers (optional)
     return (new ActiveXObject("Microsoft.XMLHTTP"));
   } 
@@ -64,4 +67,3 @@ global.$ajaxUtils = ajaxUtils;
 
 
 })(window);
-
